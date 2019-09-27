@@ -1,7 +1,6 @@
-# require modules here
+require "yaml"
 
 def load_library(path)
-  require "yaml"
   emoticons = {"get_meaning" => {}, "get_emoticon" => {}}
   YAML.load_file(emoticons.yml).each do |meaning, describe|
      
