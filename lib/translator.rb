@@ -2,7 +2,7 @@
 
 def load_library(path)
   emoticons = {"get_meaning" => {}, "get_emoticon" => {}}
-  YAML.load_file().each do |meaning, describe|
+  YAML.load_file(emoticons.yml).each do |meaning, describe|
      
      eng, jan = describe
      emoticons["get_meaning"][jan] = meaning
